@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html"
+    "test": "node tests/*.js",
+    "build": "npm run test && parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
+    "axios": "^0.24.0",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.1",
     "parcel-bundler": "^1.12.5",
